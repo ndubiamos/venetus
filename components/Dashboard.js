@@ -79,8 +79,8 @@ const Dashboard = (props) => {
           <div className={styles.title}>Scan a plastic item</div>
         </div>
       )}
-      <WhereTo support={support}/>
-      {/* <HowTo support={support} /> */}
+      // <WhereTo support={support}/>
+      <HowTo support={support} />
       <div className={styles.button} onClick={() => props.setView(true)}>
         <img src="scanmore.svg" />
         Scan a plastic item
