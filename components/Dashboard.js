@@ -9,22 +9,22 @@ const Dashboard = (props) => {
     if (navigator.share) {
       navigator
         .share({
-          url: "https://ecosnap.vercel.app",
-          text: "Learn how to recycle plastic with Ecosnap",
-          title: "Ecosnap",
+          url: "https://venetus.vercel.app",
+          text: "Learn how to recycle plastic with Venetus",
+          title: "Venetus",
         })
         .then(function () {
           console.log("Successful share");
         })
         .catch(function (error) {
           window.open(
-            "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fecosnap.vercel.app",
+            "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fvenetus.vercel.app",
             "_blank"
           );
         });
     } else {
       window.open(
-        "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fecosnap.vercel.app",
+        "https://twitter.com/intent/tweet?text=Check%20out%20EcoSnap%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fvenetus.vercel.app",
         "_blank"
       );
     }
@@ -50,7 +50,7 @@ const Dashboard = (props) => {
     <div className={styles.dashboard}>
       {support && (
         <a
-          href="https://www.producthunt.com/posts/ecosnap"
+          href="https://www.producthunt.com/posts/venetus"
           target="_blank"
           className={styles.support}
           onClick={() => {
@@ -64,11 +64,7 @@ const Dashboard = (props) => {
             onClick={handleSupport}
           />
           <img src="support.svg" className={styles.supportimg} />
-          <div className={styles.supportinfo}>
-            <div className={styles.supporttitle}>Support EcoSnap</div>
-            <div className={styles.supportdesc}>
-              We're live on Product Hunt, we'd love your support!
-            </div>
+        
           </div>
         </a>
       )}
