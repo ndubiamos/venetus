@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./../styles/Dashboard.module.css";
 import HowTo from "./HowTo";
-// import WhereTo from "./WhereTo";
 
 const Dashboard = (props) => {
   const [support, setSupport] = useState(true);
@@ -79,7 +78,6 @@ const Dashboard = (props) => {
           <div className={styles.title}>Scan a plastic item</div>
         </div>
       )}
-      // <WhereTo support={support}/>
       <HowTo support={support} />
       <div className={styles.button} onClick={() => props.setView(true)}>
         <img src="scanmore.svg" />
