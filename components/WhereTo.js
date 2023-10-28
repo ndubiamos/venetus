@@ -24,15 +24,14 @@ const WhereTo = (props) => {
     <div className={props.support ? styles.wheretosupport : styles.whereto}>
       <div className={styles.title}>Where to recycle</div>
       <div className={styles.input}>
-        <img src={searchIcon} className={styles.search} alt="Search" />
+       <img src="search.svg" className={styles.search} />
         {searchField.length > 0 && (
           <img
-            src={clearIcon}
+            src="searchclear.svg"
             onClick={() => setSearchField("")}
             className={styles.clear}
-            alt="Clear"
           />
-        )}
+        )} 
         <input
           placeholder="Search where to recyle item"
           value={searchField}
