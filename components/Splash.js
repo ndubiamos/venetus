@@ -79,8 +79,8 @@ const Splash = (props) => {
 					<img className={styles.trash} src="trash.svg"/>
 					<img className={styles.ground} src="ground.svg"/>
 				</div>
-				<div className={styles.title}>Recycle your plastic better with Artificial Intelligence</div>
-				<div className={styles.subtitle}>Take a picture of a plastic code and learn how to recycle effectively.</div>
+				<div className={styles.title}>Ppdate, Ppgrade, upcycle with Venetus</div>
+				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
 				<a className={styles.about} href="https://github.com/ndubiamos/venetus" target="_blank">About</a>
 			</div>
