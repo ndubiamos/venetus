@@ -14,9 +14,7 @@ Venetus tells you how and where to recycle your items from a simple picture, wit
 
 > You can support this project (and many others) through [GitHub Sponsors](https://github.com/sponsors/ndubiamos)! ❤️
 
-Made by [Eskin X](https://twitter.com/venetus) & [Leo](https://www.linkedin.com/in/ndubiamos/). Read more about how we built this [here](https://alyssax.substack.com/p/we-built-an-ai-recycling-app-in-a).
-
-<a href="https://www.producthunt.com/posts/ecosnap?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ecosnap" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=374164&theme=neutral" alt="EcoSnap - Recycle&#0032;your&#0032;plastic&#0032;better&#0032;with&#0032;Artificial&#0032;Intelligence | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+Made by [Eskin X](https://twitter.com/venetus) & [Ndubi](https://www.linkedin.com/in/ndubiamos/). Read more about how we built this [here](https://alyssax.substack.com/p/we-built-an-ai-recycling-app-in-a).
 
 ## Table of contents
 
