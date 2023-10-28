@@ -36,39 +36,39 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          Venetus - Recycle your plastic better with Artificial Intelligence
+          Venetus - Update Upgrade and Upcycle your Item
         </title>
         <meta
           name="title"
-          content="Venetus - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Update Upgrade and Upcycle your Item"
         />
         <meta
           name="description"
-          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is a web based app that helps you recycle your items effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://venetus.vercel.app/" />
         <meta
           property="og:title"
-          content="Venetus - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Recycle your item effectively"
         />
         <meta
           property="og:description"
-          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is web powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta
           property="og:image"
-          content="https://Venetus.vercel.app/meta.png"
+          content="https://venetus.vercel.app/meta.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://venetus.vercel.app/" />
         <meta
           property="twitter:title"
-          content="Venetus - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Recycle your item effectively"
         />
         <meta
           property="twitter:description"
-          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is an web powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta
           property="twitter:image"
