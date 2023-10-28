@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./../styles/Dashboard.module.css";
 import HowTo from "./HowTo";
-import WhereTo from "./WhereTo";
+// import WhereTo from "./WhereTo";
 
 const Dashboard = (props) => {
   const [support, setSupport] = useState(true);
