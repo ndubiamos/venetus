@@ -49,7 +49,7 @@ const Dashboard = (props) => {
   return (
     <div className={styles.dashboard}>
       <div className={styles.nav}>
-        <div className={styles.header}>Dashboard</div>
+        <div className={styles.header}>Venetus</div>
         <div className={styles.right}>
           <img
             src="settings.svg"
@@ -75,13 +75,13 @@ const Dashboard = (props) => {
         <div className={styles.callout} onClick={() => props.setView(true)}>
           <img src="decoration.svg" />
           <div className={styles.pretitle}>Start recycling</div>
-          <div className={styles.title}>Scan a plastic item</div>
+          <div className={styles.title}>Update, upgrade and upcycle</div>
         </div>
       )}
       <HowTo support={support} />
       <div className={styles.button} onClick={() => props.setView(true)}>
         <img src="scanmore.svg" />
-        Scan a plastic item
+        Scan your item
       </div>
     </div>
   );
