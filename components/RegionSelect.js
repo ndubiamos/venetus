@@ -11,12 +11,12 @@ const RegionSelect = (props) => {
 	return (
 		<div className={styles.regionselect}>
 			<div className={styles.title}>Select your region</div>
-			<div className={styles.subtitle}>We’ll give you recycling advice tailored to your location. We currently only support the UK.</div>
+			<div className={styles.subtitle}>We’ll give you recycling advice tailored to your location.</div>
 			<div className={styles.options}>
 				<div className={option === 1 ? styles.optioncheck : styles.option} onClick={() => setOption(1)}>
 					<div className={styles.info}>
 					<img src={option === 1 ? "checked.svg" : "unchecked.svg"}/>
-						<div className={styles.name}>💂‍♂ London</div>
+						<div className={styles.name}>United States</div>
 						<div className={styles.desc}>Specific plastic recycling advice</div>
 					</div>
 				</div>
