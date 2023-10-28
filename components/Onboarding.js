@@ -57,7 +57,7 @@ const Onboarding = (props) => {
         </div>
         {step === 1 && (
           <div>
-            <div className={styles.text}>Snap a picture of a plastic code</div>
+            <div className={styles.text}>Scan if your item is recyclable </div>
             <div className={styles.subtitle}>
               Look for a tiny triangle with a number inside it from 1 to 7. Keep
               it in the center of the camera for best results.
@@ -66,10 +66,10 @@ const Onboarding = (props) => {
         )}
         {step === 2 && (
           <div>
-            <div className={styles.text}>Did the AI get it right?</div>
+            <div className={styles.text}>Did we get it right?</div>
             <div className={styles.subtitle}>
-              After taking a picture, we will ask you if the AI recognised your
-              code. If it’s not right, you can teach the AI.
+              After scaning your item, we will ask you if the app recognised your
+              code. 
             </div>
           </div>
         )}
