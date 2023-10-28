@@ -24,7 +24,7 @@ const Desktop = (props) => {
           <div className={styles.name}>Venetus</div>
           <div className={styles.credit}>
             Made by{" "}
-            <a href="https://www.linkedin.com/in/leonorfurtado" target="_blank">
+            <a href="https://www.linkedin.com/in/cavalohumaid" target="_blank">
               Cavalo H
             </a>{" "}
             &{" "}
@@ -41,17 +41,6 @@ const Desktop = (props) => {
       >
         <img src="twitter.svg" /> Share
       </a>
-      <a
-        href="https://github.com/ndubiamos/venetus"
-        target="_blank"
-        className={styles.github}
-      >
-        <img src="github.svg" /> View on GitHub
-      </a>
-      <div className={styles.qrcode}>
-        <img src="qrcode.png" />
-        <span>Open on your phone ✨</span>
-      </div>
     </div>
   );
 };
