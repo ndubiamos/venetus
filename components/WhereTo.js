@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./../styles/HowTo.module.css";
-import searchIcon from "./path/to/search.svg"; // Import the search icon
-import clearIcon from "./path/to/searchclear.svg"; // Import the clear icon
+import searchIcon from "./../public/search.svg"; // Import the search icon
+import clearIcon from "./../public/searchclear.svg"; // Import the clear icon
 
 const WhereTo = (props) => {
   const [searchField, setSearchField] = useState("");
