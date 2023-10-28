@@ -1,4 +1,4 @@
-import Head from "next/head";
+eimport Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
@@ -36,43 +36,43 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>
-          EcoSnap - Recycle your plastic better with Artificial Intelligence
+          Venetus - Recycle your plastic better with Artificial Intelligence
         </title>
         <meta
           name="title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Recycle your plastic better with Artificial Intelligence"
         />
         <meta
           name="description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ecosnap.vercel.app/" />
+        <meta property="og:url" content="https://venetus.vercel.app/" />
         <meta
           property="og:title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Recycle your plastic better with Artificial Intelligence"
         />
         <meta
           property="og:description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta
           property="og:image"
-          content="https://ecosnap.vercel.app/meta.png"
+          content="https://Venetus.vercel.app/meta.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://ecosnap.vercel.app/" />
+        <meta property="twitter:url" content="https://venetus.vercel.app/" />
         <meta
           property="twitter:title"
-          content="EcoSnap - Recycle your plastic better with Artificial Intelligence"
+          content="Venetus - Recycle your plastic better with Artificial Intelligence"
         />
         <meta
           property="twitter:description"
-          content="EcoSnap is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
+          content="Venetus is an Artificial Intelligence powered app that helps you recycle your plastic effectively. It tells you what, how and where to recycle from a picture."
         />
         <meta
           property="twitter:image"
-          content="https://ecosnap.vercel.app/meta.png"
+          content="https://venetus.vercel.app/meta.png"
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
