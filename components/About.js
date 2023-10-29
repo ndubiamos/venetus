@@ -10,7 +10,7 @@ const TeamMember = ({ name, image, socialLinks }) => {
       <div className={styles.socialLinks}>
         {socialLinks.map((link, index) => (
           <Link href={link.url} key={index}>
-            <a target="_blank" rel="noreferrer noopener"> {/* Add rel attribute */}
+            <a target="_blank" rel="noreferrer noopener">
               <img src={link.icon} alt={link.name} />
             </a>
           </Link>
@@ -21,7 +21,7 @@ const TeamMember = ({ name, image, socialLinks }) => {
 };
 
 const About = (props) => {
-  const [credit, viewCredit] = useState(true); // Import and use useState
+  const [credit, setCredit] = useState(true); // Use setCredit instead of viewCredit
   const teamMembers = [
     {
       name: 'Cavalo Humaid',
@@ -55,8 +55,8 @@ const About = (props) => {
           url: 'https://twitter.com/janedoe',
         },
       },
-    ],
-  };
+    },
+  ];
 
   return (
     <div className={styles.aboutUsPage}>
@@ -64,7 +64,7 @@ const About = (props) => {
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
-        )}
+        ))} {/* Close the map function properly */}
       </div>
     </div>
   );
