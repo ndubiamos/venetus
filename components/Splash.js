@@ -5,6 +5,7 @@ import Onboarding from "./Onboarding";
 import Dashboard from "./Dashboard";
 import Viewer from "./Viewer";
 import Settings from "./Settings";
+import About from "./About";
 
 const Splash = (props) => {
 	const [getStarted, setGetStarted] = useState(false);
@@ -14,6 +15,7 @@ const Splash = (props) => {
 	const [settings, setSettings] = useState(false);
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
+	const [credit, viewCredit] =useState(false);
 
 	useEffect(() => {
 		if (props.region > 0) {
@@ -62,6 +64,9 @@ const Splash = (props) => {
 			{reset &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
+			{view &&
+				<About viewCredit={viewCredit} view={props.view} />
+			}
 			{getStarted && !done2 && !done &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
@@ -82,7 +87,8 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				<a className={styles.about} href="https://github.com/ndubiamos/venetus" target="_blank">About</a>
+				<div className= {styles.button} onClick={() => viewCredit(true)} About</div>
+				// <a className={styles.about} href="https://github.com/ndubiamos/venetus" target="_blank">About</a>
 			</div>
 			}
 		</div>
