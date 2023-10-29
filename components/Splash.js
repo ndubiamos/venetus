@@ -36,6 +36,11 @@ const Splash = (props) => {
 			setOn(false);
 		}
 	}, [done2]);
+		useEffect(() => {
+		if (props.about) {
+			viewCredit(true);
+		}
+	}, [props.about]);
 
 	const handleRegion = (number) => {
 		props.setRegion(number);
