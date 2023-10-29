@@ -12,8 +12,6 @@ const Settings = (props) => {
 				<div className={styles.item} onClick={() => props.setOn(true)}><span>Home</span> <img src="enter.svg"/></div>
 				<div className={styles.item} onClick={() => props.setReset(true)}><span>Update region</span> <img src="enter.svg"/></div>
 				<div className= {styles.item} onClick={() => props.viewCredit(true)}><span>About us</span> <img src="enter.svg"/></div>
-				<div className={styles.space}></div>
-				// <a href="https://github.com/ndubiamos/venetus" target="_blank" className={styles.item}><span>About us</span> <img src="enter.svg"/></a>
 				<a href="https://github.com/ndubiamos/venetus#credit" target="_blank" className={styles.item}><span>Credit</span> <img src="enter.svg"/></a>
 				<div className={styles.space}></div>
 				<a href="https://londonrecycles.co.uk" target="_blank" className={styles.item}><span>London Recycles</span> <img src="enter.svg"/></a>
