@@ -46,7 +46,7 @@ const About = () => {
         },
         {
           name: 'Jane Doe',
-          image: '/jane.ppg',
+          image: '/jane.png',
           socialLinks: [
             {
               name: 'Twitter',
