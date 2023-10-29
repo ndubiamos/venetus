@@ -24,7 +24,7 @@ const About = () => {
     const teamMembers = [
         {
           name: 'Cavalo Humaid',
-          image: '/cavalo.jpg',
+          image: '/cavalo.png',
           socialLinks: [
             {
               name: 'Twitter',
@@ -34,8 +34,8 @@ const About = () => {
           ],
         },
         {
-          name: 'Eslin John',
-          image: '/eslin.jpg',
+          name: 'Eskin John',
+          image: '/eskin.png',
           socialLinks: [
             {
               name: 'Twitter',
@@ -46,7 +46,7 @@ const About = () => {
         },
         {
           name: 'Jane Doe',
-          image: '/jane.jpg',
+          image: '/jane.ppg',
           socialLinks: [
             {
               name: 'Twitter',
