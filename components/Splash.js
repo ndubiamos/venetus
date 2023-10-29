@@ -92,7 +92,6 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				<div className={styles.button} onClick={() => setCredit(true)}>About</div>
 			</div>
 			}
 		</div>
