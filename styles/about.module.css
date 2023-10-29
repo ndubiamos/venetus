@@ -1,0 +1,26 @@
+/* about.module.css */
+
+.about-us-page {
+    text-align: center;
+  }
+  
+  .team-member {
+    margin: 20px;
+  }
+  
+  .team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin: 5px;
+  }
+  
+  /* Add any other styles you need */
+  
