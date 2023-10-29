@@ -38,7 +38,7 @@ const Splash = (props) => {
 	}, [done2]);
 		useEffect(() => {
 		if (props.about) {
-			viewCredit(false);
+			viewCredit(true);
 		}
 	}, [props.about]);
 
@@ -92,7 +92,6 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				// <a className={styles.item} onClick => {() =viewCredit (true)}> About</a>
 			</div>
 			}
 		</div>
