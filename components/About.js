@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'; // Import React and useState
 import Link from 'next/link';
 import styles from './../styles/about.module.css'; // Import the CSS module
 
@@ -10,7 +10,7 @@ const TeamMember = ({ name, image, socialLinks }) => {
       <div className={styles.socialLinks}>
         {socialLinks.map((link, index) => (
           <Link href={link.url} key={index}>
-            <a target="_blank">
+            <a target="_blank" rel="noreferrer noopener"> {/* Add rel attribute */}
               <img src={link.icon} alt={link.name} />
             </a>
           </Link>
@@ -20,42 +20,43 @@ const TeamMember = ({ name, image, socialLinks }) => {
   );
 };
 
-const About = () => {
-    const teamMembers = [
+const About = (props) => {
+  const [credit, viewCredit] = useState(true); // Import and use useState
+  const teamMembers = [
+    {
+      name: 'Cavalo Humaid',
+      image: '/cavalo.png',
+      socialLinks: [
         {
-          name: 'Cavalo Humaid',
-          image: '/cavalo.png',
-          socialLinks: [
-            {
-              name: 'Twitter',
-              icon: '/twitter.svg',
-              url: 'https://twitter.com/cavalohumaid',
-            },
-          ],
+          name: 'Twitter',
+          icon: '/twitter.svg',
+          url: 'https://twitter.com/cavalohumaid',
         },
+      ],
+    },
+    {
+      name: 'Eskin John',
+      image: '/eskin.png',
+      socialLinks: [
         {
-          name: 'Eskin John',
-          image: '/eskin.png',
-          socialLinks: [
-            {
-              name: 'Twitter',
-              icon: '/twitter.svg',
-              url: 'https://twitter.com/eslinjohn',
-            },
-          ],
+          name: 'Twitter',
+          icon: '/twitter.svg',
+          url: 'https://twitter.com/eslinjohn',
         },
+      },
+    },
+    {
+      name: 'Jane Doe',
+      image: '/jane.png',
+      socialLinks: [
         {
-          name: 'Jane Doe',
-          image: '/jane.png',
-          socialLinks: [
-            {
-              name: 'Twitter',
-              icon: '/twitter.svg',
-              url: 'https://twitter.com/janedoe',
-            },
-          ],
+          name: 'Twitter',
+          icon: '/twitter.svg',
+          url: 'https://twitter.com/janedoe',
         },
-      ];    
+      },
+    ],
+  };
 
   return (
     <div className={styles.aboutUsPage}>
@@ -63,7 +64,7 @@ const About = () => {
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
-        ))}
+        )}
       </div>
     </div>
   );
