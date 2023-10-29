@@ -43,8 +43,8 @@ const About = (props) => {
           icon: '/twitter.svg',
           url: 'https://twitter.com/eslinjohn',
         },
+        ],
       },
-    },
     {
       name: 'Jane Doe',
       image: '/jane.png',
@@ -54,7 +54,7 @@ const About = (props) => {
           icon: '/twitter.svg',
           url: 'https://twitter.com/janedoe',
         },
-      },
+      ],
     },
   ];
 
