@@ -15,7 +15,7 @@ const Splash = (props) => {
 	const [settings, setSettings] = useState(false);
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
-	const [credit, viewCredit] =useState(false);
+	const [credit, setCredit] =useState(false);
 
 	useEffect(() => {
 		if (props.region > 0) {
@@ -38,7 +38,7 @@ const Splash = (props) => {
 	}, [done2]);
 		useEffect(() => {
 		if (props.about) {
-			viewCredit(true);
+			setCredit(true);
 		}
 	}, [props.about]);
 
@@ -70,7 +70,7 @@ const Splash = (props) => {
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
 			{credit &&
-				<About viewCredit={viewCredit} credit={props.credit} />
+				<About setCredit={setCredit} credit={props.credit} />
 			}
 			{getStarted && !done2 && !done &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
@@ -92,7 +92,7 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				<div className={styles.button} onClick={() => viewCredit(true)}>About</div>
+				<div className={styles.button} onClick={() => setCredit(true)}>About</div>
 			</div>
 			}
 		</div>
