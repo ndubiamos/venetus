@@ -64,8 +64,8 @@ const Splash = (props) => {
 			{reset &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
-			{view &&
-				<About viewCredit={viewCredit} view={props.view} />
+			{credit &&
+				<About viewCredit={viewCredit} credit={props.credit} />
 			}
 			{getStarted && !done2 && !done &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
