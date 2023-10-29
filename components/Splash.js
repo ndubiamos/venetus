@@ -87,7 +87,7 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				<div className= {styles.button} onClick={() => viewCredit(true)} About</div>
+				<div className= {styles.button} onClick={() => viewCredit(true)}> About</div>
 				// <a className={styles.about} href="https://github.com/ndubiamos/venetus" target="_blank">About</a>
 			</div>
 			}
