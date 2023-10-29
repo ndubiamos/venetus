@@ -38,7 +38,7 @@ const Splash = (props) => {
 	}, [done2]);
 		useEffect(() => {
 		if (props.about) {
-			viewCredit(true);
+			viewCredit(false);
 		}
 	}, [props.about]);
 
