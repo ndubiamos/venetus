@@ -11,6 +11,7 @@ export default function Home() {
   const [num, setNum] = useState(0);
   const [tensor, setTensor] = useState("");
   const [pred, setPred] = useState(0);
+  const [credit, setCredit] = useState(0);
 
   // Saved preferences
   useEffect(() => {
@@ -91,6 +92,8 @@ export default function Home() {
         <Desktop
           pred={pred}
           setPred={setPred}
+          credit={credit}
+          setCredit={setCredit}
           tensor={tensor}
           setTensor={setTensor}
           region={region}
