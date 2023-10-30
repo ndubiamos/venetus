@@ -57,7 +57,18 @@ const About = (props) => {
       ],
     },
   ];
+useEffect(() => {
+		if (props.about) {
+			setCredit(true);
+		}
+	}, [props.about]);
 
+	const handleAbout = (number) => {
+		props.setRegion(number);
+		localStorage.setCredit("credit", number);
+		credit(true);
+		setCredit(false);
+	}
   return (
     <div className={styles.aboutUsPage}>
       <h1>About Us</h1>
