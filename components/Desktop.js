@@ -16,6 +16,8 @@ const Desktop = (props) => {
           num={props.num}
           onboarding={props.onboarding}
           setRegion={props.setRegion}
+          credit={props.credit}
+          setCredit={props.setCredit}
         />
       )}
       <div className={styles.badge}>
