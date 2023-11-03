@@ -6,17 +6,17 @@ const teamMembers = [
   {
     name: "Cavalo Humaid",
     image: "/cavalo.png",
-    twitterHandle: "@cavalohumaid",
+    twitterHandle: "@humaid",
   },
   {
-    name: "Eskin John",
+    name: "Trenton Krzyzowski",
     image: "/Eskin.png",
-    twitterHandle: "@eskinjohn",
+    twitterHandle: "@Trenton",
   },
   {
-    name: "Jane Doe",
+    name: "Taya Weatherford",
     image: "/jane.png",
-    twitterHandle: "@janedoe",
+    twitterHandle: "@Taya",
   },
 ];
 
