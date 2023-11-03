@@ -43,6 +43,16 @@ const Splash = (props) => {
 		}
 	}, [props.about]);
 
+		useEffect(() => {
+		if (author) {
+			author(true);
+		}
+	}, [author]);
+
+	const handleAbout = (about) => {
+		props.setAuthor(true);
+		setAuthor(true);
+
 	const handleRegion = (number) => {
 		props.setRegion(number);
 		localStorage.setItem("region", number);
@@ -59,7 +69,7 @@ const Splash = (props) => {
 				<Settings setSettings={setSettings} setReset={setReset} setOn={setOn} />
 			}
 			{done && done2 && !view && !settings &&
-				<Dashboard setSettings={setSettings} setView={setView} num={props.num} setNum={props.setnum} region={props.region} />
+				<Dashboard setSettings={setSettings} setView={setView} num={props.num} setNum={props.setNum} region={props.region} />
 			}
 			{on &&
 				<Onboarding setDone={setDone2} setOn={setOn} />
