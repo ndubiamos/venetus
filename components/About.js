@@ -21,7 +21,7 @@ const TeamMember = ({ name, image, socialLinks }) => {
 };
 
 const About = (props) => {
-  const [author, setAuthor] = useState(""); // Use setAuthor instead of viewAuthor
+  const [author, setAuthor] = useState("false"); // Use setAuthor instead of viewAuthor
   const handleContinue = () => {
     props.handleAbout(author);
   };
