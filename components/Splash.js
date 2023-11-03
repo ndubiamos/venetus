@@ -15,7 +15,7 @@ const Splash = (props) => {
 	const [settings, setSettings] = useState(false);
 	const [reset, setReset] = useState(false);
 	const [on, setOn] = useState(false);
-	const [credit, setCredit] =useState(false);
+	const [author, setAuthor] =useState(false);
 
 	useEffect(() => {
 		if (props.region > 0) {
@@ -38,7 +38,7 @@ const Splash = (props) => {
 	}, [done2]);
 		useEffect(() => {
 		if (props.about) {
-			setCredit(true);
+			setAuthor(true);
 		}
 	}, [props.about]);
 
@@ -69,8 +69,8 @@ const Splash = (props) => {
 			{reset &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
-			{credit &&
-				<About setCredit={setCredit} credit={props.credit} />
+			{author &&
+				<About setAuthor={setAuthor} credit={props.about} />
 			}
 			{getStarted && !done2 && !done &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
