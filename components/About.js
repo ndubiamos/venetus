@@ -28,18 +28,18 @@ const About = (props) => {
   const teamMembers = [
     {
       name: 'Cavalo Humaid',
-      image: '/team-member-1.jpg',
+      image: '/cavalo.png',
       socialLinks: [
         {
           name: 'Twitter',
           icon: '/twitter.svg',
-          url: 'https://twitter.com/team_member_1',
+          url: 'https://twitter.com/cavalohumaid',
         },
       ],
     },
     {
-      name: 'Eslin John',
-      image: '/team-member-2.jpg',
+      name: 'Eskin John',
+      image: '/eskin.png',
       socialLinks: [
         {
           name: 'Twitter',
@@ -50,12 +50,12 @@ const About = (props) => {
     },
     {
       name: 'Jane Doe',
-      image: '/team-member-3.jpg',
+      image: '/jane.png',
       socialLinks: [
         {
           name: 'Twitter',
           icon: '/twitter.svg',
-          url: 'https://twitter.com/team_member_3',
+          url: 'https://twitter.com/janedoe',
         },
       },
     },
