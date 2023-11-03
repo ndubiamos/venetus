@@ -1,6 +1,7 @@
 // About.js
 import React from "react";
 import styles from "./../styles/About.module.css";
+import Dashboard from "./Dashboard";
 
 const teamMembers = [
   {
@@ -22,6 +23,21 @@ const teamMembers = [
 
 const About = () => {
   return (
+    <div className={styles.dashboard}>
+      <div className={styles.nav}>
+        <div className={styles.header}>Venetus</div>
+        <div className={styles.right}>
+          <img
+            src="settings.svg"
+            onClick={() => props.setSettings(true)}
+            className={styles.settings}
+          />
+          <img
+            onClick={() => handleShare()}
+            className={styles.help}
+            src="share.svg"
+          />
+        </div>
     <div className={styles.aboutPage}>
       <h1>About Us</h1>
       <div className={styles.teamMembersGrid}>
