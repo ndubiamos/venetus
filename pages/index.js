@@ -11,7 +11,7 @@ export default function Home() {
   const [num, setNum] = useState(0);
   const [tensor, setTensor] = useState("");
   const [pred, setPred] = useState(0);
-  const [author, setAuthor] = useState(0);
+  const [author, setAuthor] = useState(false);
 
   // Saved preferences
   useEffect(() => {
