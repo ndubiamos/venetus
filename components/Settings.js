@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./../styles/Settings.module.css";
 import About from "./About";
 
