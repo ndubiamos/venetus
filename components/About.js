@@ -1,6 +1,6 @@
 // About.js
 import React from "react";
-import styles from "./About.module.css";
+import styles from "./../styles/About.module.css";
 
 const teamMembers = [
   {
