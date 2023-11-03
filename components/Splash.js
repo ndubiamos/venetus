@@ -115,8 +115,6 @@ const Splash = (props) => {
           <div className={styles.button} onClick={() => setGetStarted(true)}>
             Get started
           </div>
-          <div className={styles.button} onClick={() => setAuthor(true)}>
-            About us
           </div>
         </div>
       )}
