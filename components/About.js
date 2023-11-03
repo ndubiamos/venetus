@@ -1,6 +1,6 @@
-import React, { useState } from 'react'; // Import React and useState
+import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from './../styles/about.module.css'; // Import the CSS module
+import styles from '../styles/about.module.css'; // Import the CSS module
 
 const TeamMember = ({ name, image, socialLinks }) => {
   return (
@@ -10,7 +10,7 @@ const TeamMember = ({ name, image, socialLinks }) => {
       <div className={styles.socialLinks}>
         {socialLinks.map((link, index) => (
           <Link href={link.url} key={index}>
-            <a target="_blank" rel="noreferrer noopener">
+            <a target="_blank">
               <img src={link.icon} alt={link.name} />
             </a>
           </Link>
@@ -21,62 +21,55 @@ const TeamMember = ({ name, image, socialLinks }) => {
 };
 
 const About = (props) => {
-  const [credit, setCredit] = useState(true); // Use setCredit instead of viewCredit
+  const [author, setAuthor] = useState(props.about); // Use setAuthor instead of viewAuthor
+  const handleContinue = () => {
+    props.handleAbout(author);
+  };
   const teamMembers = [
     {
       name: 'Cavalo Humaid',
-      image: '/cavalo.png',
+      image: '/team-member-1.jpg',
       socialLinks: [
         {
           name: 'Twitter',
           icon: '/twitter.svg',
-          url: 'https://twitter.com/cavalohumaid',
+          url: 'https://twitter.com/team_member_1',
         },
       ],
     },
     {
-      name: 'Eskin John',
-      image: '/Eskin.png',
+      name: 'Eslin John',
+      image: '/team-member-2.jpg',
       socialLinks: [
         {
           name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/eslinjohn',
+          icon: '/twitter.svg', // Corrected the file extension here
+          url: 'https://twitter.com/team_member_2',
         },
-        ],
       },
+    },
     {
       name: 'Jane Doe',
-      image: '/jane.png',
+      image: '/team-member-3.jpg',
       socialLinks: [
         {
           name: 'Twitter',
           icon: '/twitter.svg',
-          url: 'https://twitter.com/janedoe',
+          url: 'https://twitter.com/team_member_3',
         },
-      ],
+      },
     },
   ];
-useEffect(() => {
-		if (props.about) {
-			setCredit(true);
-		}
-	}, [props.about]);
 
-	const handleAbout = (number) => {
-		props.setRegion(number);
-		localStorage.setCredit("credit", number);
-		credit(true);
-		setCredit(false);
-	}
   return (
     <div className={styles.aboutUsPage}>
       <h1>About Us</h1>
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
-        ))} {/* Close the map function properly */}
+        )}
       </div>
+      <div className={styles.button} onClick={handleContinue}>Close</div>
     </div>
   );
 };
