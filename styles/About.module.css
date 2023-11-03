@@ -10,7 +10,7 @@
 .teamMembersGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin-top: 20px;
 }
 
@@ -23,12 +23,12 @@
 }
 
 .teamMember img {
-  max-width: 80px;
-  border-radius: 80px;
+  max-width: 100px;
+  border-radius: 100px;
 }
 
 .teamMember h3 {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .twitterLink {
@@ -39,6 +39,6 @@
 }
 
 .twitterIcon {
-  max-width: 20px; /* Adjust the size as needed */
+  max-width: 10px; /* Adjust the size as needed */
   margin-right: 5px;
 }
