@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/about.module.css'; // Import the CSS module
+import styles from '../styles/About.module.css'; // Import the CSS module
 
 const TeamMember = ({ name, image, socialLinks }) => {
   return (
