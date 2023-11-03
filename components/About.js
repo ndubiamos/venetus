@@ -48,30 +48,6 @@ const About = (props) => {
           />
         </div>
       </div>
-                    <div className={styles.badge}>
-        <img src="logo-with-back.svg" />
-        <div className={styles.badgewrap}>
-          <div className={styles.name}>Venetus</div>
-          <div className={styles.credit}>
-            Made by{" "}
-            <a href="https://www.linkedin.com/in/cavalohumaid" target="_blank">
-              Cavalo H
-            </a>{" "}
-            &{" "}
-            <a href="https://twitter.com/ndubiamos/" target="_blank">
-             Eskin J
-            </a>
-          </div>
-        </div>
-      </div>
-      <a
-        href="https://twitter.com/intent/tweet?text=Check%20out%20Venetus%20to%20learn%20how%20to%20recycle%20your%20plastic%20better%20with%20AI&url=http%3A%2F%2Fvenetus.vercel.app"
-        className={styles.share}
-        target="_blank"
-      >
-        <img src="twitter.svg" /> Share
-      </a>
-    </div>
       <div className={styles.aboutPage}>
         <h1>About Us</h1>
         <div className={styles.teamMembersGrid}>
