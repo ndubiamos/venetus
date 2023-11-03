@@ -81,7 +81,7 @@ const Splash = (props) => {
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
 			}
 			{author &&
-				<About setAuthor={setAuthor} about={props.about} />
+				<About handleAbout={handleAbout} about={props.about} />
 			}
 			{getStarted && !done2 && !done &&
 				<RegionSelect handleRegion={handleRegion} region={props.region} />
