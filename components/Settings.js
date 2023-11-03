@@ -3,10 +3,10 @@ import styles from "./../styles/Settings.module.css";
 import About from "./About";
 
 const Settings = (props) => {
-	 const [author, setAuthor] = useState(false);
+	 const [author, setAuthor] = useState(true);
 
   	const handleAbout = () => {
-   	 setAuthor(true);
+   	 setAuthor(false);
  	 };
 	return (
 		<div className={styles.settings}>
@@ -26,6 +26,7 @@ const Settings = (props) => {
 				<a href="mailto:hi@ventus.com" target="_blank" className={styles.item}><span>Contact us</span> <img src="enter.svg"/></a>
 				<div className={styles.credit}>Made by <a href="https://www.linkedin.com/in/cavalohumaid" target="_blank">Cavalo</a> & <a href="https://twitter.com/venetus" target="_blank">Eskin J</a></div>
 			</div>
+		{showAbout && <About handleAbout={() => setShowAbout(false)} />}
 		</div>
 	)
 }
