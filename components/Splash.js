@@ -90,7 +90,7 @@ const Splash = (props) => {
       {on && <Onboarding setDone={setDone2} setOn={setOn} />}
       {getStarted && done && !done2 && <Onboarding setDone={setDone2} setOn={setOn} />}
       {reset && <RegionSelect handleRegion={handleRegion} region={props.region} />}
-      {author && <About handleAbout={handleAbout} about={props.about} />}
+      {author && <About setAuthor={setAuthor} about={props.about} />} {/* Fixed the props */}
       {getStarted && !done2 && !done && (
         <RegionSelect handleRegion={handleRegion} region={props.region} />
       )}
@@ -114,7 +114,6 @@ const Splash = (props) => {
           </div>
           <div className={styles.button} onClick={() => setGetStarted(true)}>
             Get started
-          </div>
           </div>
         </div>
       )}
