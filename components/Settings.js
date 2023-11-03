@@ -1,13 +1,9 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import styles from "./../styles/Settings.module.css";
 import About from "./About";
 
 const Settings = (props) => {
-	 const [author, setAuthor] = useState(true);
-
-  	const handleAbout = () => {
-   	 setAuthor(false);
- 	 };
 	return (
 		<div className={styles.settings}>
 			<div className={styles.nav}>
@@ -17,7 +13,9 @@ const Settings = (props) => {
 			<div className={styles.all}>
 				<div className={styles.item} onClick={() => props.setOn(true)}><span>Home</span> <img src="enter.svg"/></div>
 				<div className={styles.item} onClick={() => props.setReset(true)}><span>Update region</span> <img src="enter.svg"/></div>
-				<div className= {styles.item} onClick={(handleAbout)}><span>About us</span> <img src="enter.svg"/></div>
+				<Link href="/about">
+         			 <a className={styles.item}> <span>About us</span> <img src="enter.svg" /> </a>
+       				</Link>
 				<a href="https://github.com/ndubiamos/venetus#credit" target="_blank" className={styles.item}><span>Credit</span> <img src="enter.svg"/></a>
 				<div className={styles.space}></div>
 				<a href="https://londonrecycles.co.uk" target="_blank" className={styles.item}><span>London Recycles</span> <img src="enter.svg"/></a>
