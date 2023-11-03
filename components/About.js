@@ -39,7 +39,7 @@ const About = (props) => {
     },
     {
       name: 'Eskin John',
-      image: '/eskin.png',
+      image: '/Eskin.png',
       socialLinks: [
         {
           name: 'Twitter',
