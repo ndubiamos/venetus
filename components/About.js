@@ -45,7 +45,7 @@ const teamMembers = [
         name: 'Twitter',
         icon: '/twitter.svg',
         url: 'https://twitter.com/eskinjohn',
-      },
+      }
     ],
   },
   {
