@@ -50,10 +50,10 @@ const Splash = (props) => {
     }
   }, [author]);
 
-  const handleAbout = (about) => {
-    props.setAuthor(true);
-    setAuthor(true);
-  };
+  // const handleAbout = (about) => {
+  //   props.setAuthor(true);
+  //   setAuthor(true);
+  // };
 
   const handleRegion = (number) => {
     props.setRegion(number);
@@ -94,9 +94,9 @@ const Splash = (props) => {
       {getStarted && done && !done2 && <Onboarding setDone={setDone2} setOn={setOn} />}
       {reset && <RegionSelect handleRegion={handleRegion} region={props.region} />}
       {author && <About setAuthor={setAuthor} about={props.about} />} {/* Fixed the props */}
-      {setAuthor && !author && !about && (
-        <About setAuthor={setAuthor} aboout={props.about}/>
-        )}
+      // {setAuthor && !author && !about && (
+      //   <About setAuthor={setAuthor} aboout={props.about}/>
+      //   )}
       {getStarted && !done2 && !done && (
         <RegionSelect handleRegion={handleRegion} region={props.region} />
       )}
