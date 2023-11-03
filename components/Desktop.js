@@ -16,15 +16,15 @@ const Desktop = (props) => {
           num={props.num}
           onboarding={props.onboarding}
           setRegion={props.setRegion}
-          credit={props.credit}
-          setCredit={props.setCredit}
+          author={props.author}
+          setAuthor={props.setAuthor}
         />
       )}
       <div className={styles.badge}>
         <img src="logo-with-back.svg" />
         <div className={styles.badgewrap}>
           <div className={styles.name}>Venetus</div>
-          <div className={styles.credit}>
+          <div className={styles.author}>
             Made by{" "}
             <a href="https://www.linkedin.com/in/cavalohumaid" target="_blank">
               Cavalo H
