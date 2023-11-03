@@ -36,9 +36,10 @@ const Splash = (props) => {
 			setOn(false);
 		}
 	}, [done2]);
-		useEffect(() => {
+	
+	useEffect(() => {
 		if (props.about) {
-			setAuthor(true);
+			setAuthor(false);
 		}
 	}, [props.about]);
 
