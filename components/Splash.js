@@ -52,7 +52,7 @@ const Splash = (props) => {
 	const handleAbout = (about) => {
 		props.setAuthor(true);
 		setAuthor(true);
-
+	};
 	const handleRegion = (number) => {
 		props.setRegion(number);
 		localStorage.setItem("region", number);
@@ -103,11 +103,10 @@ const Splash = (props) => {
 				<div className={styles.title}>Update, Upgrade, Upcycle </div>
 				<div className={styles.subtitle}>Scan your item's code and learn how to recycle effectively.</div>
 				<div className={styles.button} onClick={() => setGetStarted(true)}>Get started</div>
-				<div className={styles.button} onClick={() => setAuthor(true)}>About</div>
+				<div className={styles.button} onClick={() => setAuthor(true)}>About us</div>
 			</div>
 			}
 		</div>
-			</div>
 			}
 		</div>
 	)
