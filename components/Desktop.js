@@ -24,7 +24,7 @@ const Desktop = (props) => {
         <img src="logo-with-back.svg" />
         <div className={styles.badgewrap}>
           <div className={styles.name}>Venetus</div>
-          <div className={styles.author}>
+          <div className={styles.credit}>
             Made by{" "}
             <a href="https://www.linkedin.com/in/cavalohumaid" target="_blank">
               Cavalo H
