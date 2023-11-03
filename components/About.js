@@ -1,76 +1,40 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import styles from '../styles/About.module.css'; // Import the CSS module
+// About.js
+import React from "react";
+import styles from "./About.module.css";
 
-const TeamMember = ({ name, image, socialLinks }) => {
+const teamMembers = [
+  {
+    name: "Cavalo Humaid",
+    image: "/cavalo.png",
+    twitterHandle: "@cavalohumaid",
+  },
+  {
+    name: "Eskin John",
+    image: "/Eskin.png",
+    twitterHandle: "@eskinjohn",
+  },
+  {
+    name: "Jane Doe",
+    image: "/jane.png",
+    twitterHandle: "@janedoe",
+  },
+];
+
+const About = () => {
   return (
-    <div className={styles.teamMember}>
-      <img src={image} alt={name} />
-      <h3>{name}</h3>
-      <div className={styles.socialLinks}>
-        {socialLinks.map((link, index) => (
-          <Link href={link.url} key={index}>
-            <a target="_blank">
-              <img src={link.icon} alt={link.name} />
-            </a>
-          </Link>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const About = (props) => {
-  const [author, setAuthor] = useState("false"); // Use setAuthor instead of viewAuthor
-  const handleContinue = () => {
-    props.handleAbout(author);
-  };
-  const teamMembers = [
-    {
-      name: 'Cavalo Humaid',
-      image: '/cavalo.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/cavalohumaid',
-        },
-      ],
-    },
-    {
-      name: 'Eskin John',
-      image: '/Eskin.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/eskinjohn',
-        },
-      ],
-    },
-    {
-      name: 'Jane Doe',
-      image: '/jane.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/janedoe',
-        },
-      ],
-    },
-  ];
-
-  return (
-    <div className={styles.aboutUsPage}>
+    <div className={styles.aboutPage}>
       <h1>About Us</h1>
-      <div className={styles.teamMembers}>
+      <div className={styles.teamMembersGrid}>
         {teamMembers.map((member, index) => (
-          <TeamMember key={index} {...member} />
+          <div key={index} className={styles.teamMember}>
+            <img src={member.image} alt={member.name} />
+            <h3>{member.name}</h3>
+            <a href={`https://twitter.com/${member.twitterHandle}`} target="_blank" className={styles.twitterLink}>
+              <img src="/twitter.svg" alt="Twitter" className={styles.twitterIcon} />
+              {member.twitterHandle}
+            </a>
+          </div>
         ))}
-      </div>
-      <div className={styles.button} onClick={handleContinue}>
-        Close
       </div>
     </div>
   );
