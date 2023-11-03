@@ -19,12 +19,12 @@
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 
 .teamMember img {
-  max-width: 100%;
-  border-radius: 50%;
+  max-width: 50px;
+  border-radius: 50px;
 }
 
 .teamMember h3 {
