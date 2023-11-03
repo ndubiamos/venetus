@@ -25,41 +25,42 @@ const About = (props) => {
   const handleContinue = () => {
     props.handleAbout(author);
   };
-  const teamMembers = [
-    {
-      name: 'Cavalo Humaid',
-      image: '/cavalo.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/cavalohumaid',
-        },
-      ],
-    },
-    {
-      name: 'Eskin John',
-      image: '/eskin.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg', // Corrected the file extension here
-          url: 'https://twitter.com/team_member_2',
-        },
+const teamMembers = [
+  {
+    name: 'Cavalo Humaid',
+    image: '/team-member-1.jpg',
+    socialLinks: [
+      {
+        name: 'Twitter',
+        icon: '/twitter.svg',
+        url: 'https://twitter.com/team_member_1',
       },
-    },
-    {
-      name: 'Jane Doe',
-      image: '/jane.png',
-      socialLinks: [
-        {
-          name: 'Twitter',
-          icon: '/twitter.svg',
-          url: 'https://twitter.com/janedoe',
-        },
+    ],
+  },
+  {
+    name: 'Eslin John',
+    image: '/team-member-2.jpg',
+    socialLinks: [
+      {
+        name: 'Twitter',
+        icon: '/twitter.svg',
+        url: 'https://twitter.com/team_member_2',
       },
-    },
-  ];
+    ],
+  },
+  {
+    name: 'Jane Doe',
+    image: '/team-member-3.jpg',
+    socialLinks: [
+      {
+        name: 'Twitter',
+        icon: '/twitter.svg',
+        url: 'https://twitter.com/team_member_3',
+      },
+    ],
+  },
+];
+
 
   return (
     <div className={styles.aboutUsPage}>
