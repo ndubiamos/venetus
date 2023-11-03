@@ -94,9 +94,6 @@ const Splash = (props) => {
       {getStarted && done && !done2 && <Onboarding setDone={setDone2} setOn={setOn} />}
       {reset && <RegionSelect handleRegion={handleRegion} region={props.region} />}
       {author && <About setAuthor={setAuthor} about={props.about} />} {/* Fixed the props */}
-      // {setAuthor && !author && !about && (
-      //   <About setAuthor={setAuthor} aboout={props.about}/>
-      //   )}
       {getStarted && !done2 && !done && (
         <RegionSelect handleRegion={handleRegion} region={props.region} />
       )}
