@@ -73,6 +73,8 @@ const Splash = (props) => {
           setNum={props.setNum}
           num={props.num}
           region={props.region}
+          about={props.about}
+          setAuthor={setAuthor}
         />
       )}
       {settings && !reset && !on && (
